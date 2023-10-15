@@ -22,8 +22,7 @@ public HomePage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 
 }
-//@FindBy (xpath = "/html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a")
-//private WebElement register;
+
 
 @FindBy (xpath = "//a[@class='ico-register']")
 private WebElement register;
