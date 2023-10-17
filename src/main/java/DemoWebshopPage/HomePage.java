@@ -22,8 +22,7 @@ public HomePage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 
 }
-//@FindBy (xpath = "/html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a")
-//private WebElement register;
+
 
 @FindBy (xpath = "//a[@class='ico-register']")
 private WebElement register;
@@ -51,6 +50,18 @@ private WebElement save;
 
 @FindBy(xpath="//div[contains(text(),'Your registration completed')]")
 private WebElement registerSuccessMessage;
+
+@FindBy(xpath="//a[text()='Log in']")
+private WebElement Login;
+
+@FindBy(id="//input[@id='Email']")
+private WebElement emailField;
+
+@FindBy(id="//input[@id='Password']")
+private WebElement passwordField;
+		
+@FindBy(xpath="//input[@value='Log in']")
+private WebElement LoginMail;
 
 
 public WebDriver getDriver() {
@@ -91,6 +102,22 @@ public WebElement getSave() {
 
 public WebElement getRegisterSuccessMessage() {
 	return registerSuccessMessage;
+}
+public WebElement getLogin() {
+	return Login;
+}
+
+
+public WebElement getLoginMail() {
+	return LoginMail;
+}
+
+public WebElement getEmailField() {
+	return emailField;
+}
+
+public WebElement getPasswordField() {
+	return passwordField;
 }
 
 

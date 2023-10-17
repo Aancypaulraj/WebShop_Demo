@@ -55,6 +55,22 @@ public void click_on_register_button_and_continue() {
 @Then("Verify Sucess message")
 public void sucessmessage( ) {
     Assert.assertTrue(h.getRegisterSuccessMessage().isDisplayed());
-    driver.quit();
+    
 }
+@When("User click on the Login button")
+public void user_click_on_the_login_button() {
+    click(h.getLogin());
+}
+
+@Then("Use enter the  details {string},{string}")
+public void use_enter_login_details(String string, String string2) {
+   sendkeys(h.getEmailField(), string);
+   sendkeys(h.getPasswordField(),string2);
+}
+
+@Then("Click on Login button")
+public void click_on_login_button() {
+    click(h.getLoginMail());
+}
+
 }

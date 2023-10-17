@@ -15,3 +15,9 @@ Feature: Demo Login
       | First Name|Last name | Email  |Password |Confirm password|
       | Aancy | P | aancy.paulraj@gmail.com|Christs@123|Christs@123|
       
+@tagadd
+  Scenario Outline: login  to demo
+    And Click on the  login 
+    Then Use enter the  details "<Emailaddress>","<Password>"
+    #And User Clicks on Addtocart
+    Then User Clicks on Loginbutton
