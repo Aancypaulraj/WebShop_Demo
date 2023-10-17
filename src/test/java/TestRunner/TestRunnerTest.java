@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = "D:\\Eclipse\\FIS\\Demo1\\src\\main\\resources\\Feature\\Demo.feature",
+		features = "D:\\Eclipse\\FIS\\Demo3\\src\\main\\resources\\Feature\\Demo.feature",
 		glue={"Beb_Stepdefinition"},
 		stepNotifications=true,
 		tags="@tagLogin",
