@@ -16,8 +16,8 @@ Feature: Demo Login
       | Aancy | P | aancy.paulraj@gmail.com|Christs@123|Christs@123|
       
 @tagadd
-Scenario Outline: add products  Demo Webshop
-     And User Click on Electronics
+  Scenario Outline: add products on the Demo Webshop
+  And Click on Electronics
     Then User Clicks on CellPhones
     #And User Clicks on Addtocart
     Then User Clicks on Addtocart1

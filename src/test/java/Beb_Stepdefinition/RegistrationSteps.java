@@ -55,6 +55,41 @@ public void click_on_register_button_and_continue() {
 @Then("Verify Sucess message")
 public void sucessmessage( ) {
     Assert.assertTrue(h.getRegisterSuccessMessage().isDisplayed());
-    driver.quit();
+    
+}
+//@When("User click on the Login button")
+//public void user_click_on_the_login_button() {
+//    click(h.getLogin());
+//}
+//
+//@Then("Use enter the  details {string},{string}")
+//public void use_enter_the_details(String string, String string2) {
+//    se
+//}
+//
+//@Then("Click on Login button")
+//public void click_on_login_button() {
+//    
+//}
+@Then("Click on Electronics")
+public void click_on_electronics() {
+    click(h.getElectronics());
+}
+
+@Then("User Clicks on CellPhones")
+public void user_clicks_on_cell_phones() {
+	//action.moveToElement(ele).perform();
+	 click(h.getCellphone()); 
+}
+
+//@Then("User Clicks on Addtocart")
+//public void user_clicks_on_addtocart() {
+//	click(h.getAddtocart());
+//}
+
+@Then("User Clicks on Addtocart1")
+public void user_clicks_on_addtocart1() {
+	click(h.getAddtocart1());
+	driver.quit();
 }
 }
