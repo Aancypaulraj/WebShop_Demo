@@ -57,4 +57,6 @@ public void sucessmessage( ) {
     Assert.assertTrue(h.getRegisterSuccessMessage().isDisplayed());
     driver.quit();
 }
+
+
 }

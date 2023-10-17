@@ -10,8 +10,20 @@ Feature: Demo Login
     Then Use enter the  details "<First Name>","<Last name>","<Email>","<Password>","<Confirm password>"
     And Click on Register button and Continue
     Then Verify Sucess message
+    
 
     Examples: 
       | First Name|Last name | Email  |Password |Confirm password|
       | Aancy | P | aancy.paulraj@gmail.com|Christs@123|Christs@123|
+      
+@tagLogin
+Scenario Outline: Login on the Demo Webshop
+    Given User Navigate Demo Webshop homepage "https://demowebshop.tricentis.com/"
+    When  User click on the Login button
+    Then Use enter the  details "<Email>","<Password>"
+    And Click on Login button 
+     Examples: 
+      | Email|Password |
+      | aancy.p@gmail.com | Christs@123 |
+      
       
