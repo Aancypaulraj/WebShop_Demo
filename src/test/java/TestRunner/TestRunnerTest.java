@@ -12,7 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = "D:\\Eclipse\\FIS\\Demo1\\src\\main\\resources\\Feature\\Demo.feature",
 		glue={"Beb_Stepdefinition"},
 		stepNotifications=true,
-		dryRun=false,		
+		tags="@tagLogin",
+		dryRun=true,		
 		plugin= {"pretty","html:target/cucumber.html"},
 		monochrome = true
 	
