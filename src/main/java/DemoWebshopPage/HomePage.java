@@ -120,5 +120,4 @@ public WebElement getPasswordField() {
 	return passwordField;
 }
 
-
 }
