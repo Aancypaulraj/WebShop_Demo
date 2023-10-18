@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.github.javafaker.Faker;
 
-import BaseLayer.Baseclass;
-import DemoWebshopPage.HomePage;
+import PageObject.Baseclass;
+import PageObject.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;

@@ -1,5 +1,5 @@
 
-package DemoWebshopPage;
+package PageObject;
 
 
 import org.openqa.selenium.JavascriptExecutor;
