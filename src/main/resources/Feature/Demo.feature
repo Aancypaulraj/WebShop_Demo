@@ -12,3 +12,19 @@ Feature: Desktop Application
     And User clicks on add to compare list
     Then User clicks on logout button 
       
+   @taglogin   
+   Scenario Outline: login  to demo
+    And Click on the  login 
+    Then Use enter the  details "<Emailaddress>","<Password>"
+    #And User Clicks on Addtocart
+    Then User Clicks on Loginbutton     
+      
+@tagadd
+
+  Scenario Outline: add products on the Demo Webshop
+  And Click on Electronics
+    Then User Clicks on CellPhones
+    #And User Clicks on Addtocart
+    Then User Clicks on Addtocart1
+
+  

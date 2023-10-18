@@ -51,6 +51,35 @@ private WebElement save;
 @FindBy(xpath="//div[contains(text(),'Your registration completed')]")
 private WebElement registerSuccessMessage;
 
+@FindBy(xpath="//a[text()='Log in']")
+private WebElement Login;
+
+
+@FindBy(xpath="/html/body/div[4]/div[1]/div[2]/ul[1]/li[3]/a")
+private WebElement Electronics;
+
+@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/a/img")
+private WebElement Cellphone;
+
+@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/a/img")
+private WebElement Addtocart;
+
+@FindBy(xpath="(//input[@type='button'])[2]")
+private WebElement Addtocart1;
+
+
+
+
+@FindBy(id="//input[@id='Email']")
+private WebElement emailField;
+
+@FindBy(id="//input[@id='Password']")
+private WebElement passwordField;
+		
+
+@FindBy(xpath="//input[@value='Log in']")
+private WebElement LoginMail;
+
 
 public WebDriver getDriver() {
 	return driver;
@@ -91,6 +120,43 @@ public WebElement getSave() {
 public WebElement getRegisterSuccessMessage() {
 	return registerSuccessMessage;
 }
+public WebElement getLogin() {
+	return Login;
+}
 
+public WebElement getElectronics() {
+	return Electronics;
+}
+
+
+
+public WebElement getCellphone() {
+	return Cellphone;
+}
+
+
+
+public WebElement getAddtocart() {
+	return Addtocart;
+}
+
+
+
+public WebElement getAddtocart1() {
+	return Addtocart1;
+}
+
+
+public WebElement getLoginMail() {
+	return LoginMail;
+}
+
+public WebElement getEmailField() {
+	return emailField;
+}
+
+public WebElement getPasswordField() {
+	return passwordField;
+}
 
 }
