@@ -1,7 +1,7 @@
 
 @tag
-Feature: Demo Login
-  I want to Login to the Demo application
+Feature: Desktop Application
+  I want to purchase the desktop to the Demo application
  
   @tag2
   Scenario Outline: Desktop
